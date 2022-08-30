@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ln"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="16dp">
+
+    <TextView
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:singleLine="true"
+        android:id="@+id/txt_log"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/black666"
+        android:textSize="14sp" />
+
+</LinearLayout>

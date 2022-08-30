@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/statuBar">
+
+        <RelativeLayout
+            android:id="@+id/rl_titlebar1"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:id="@+id/title_left"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp">
+
+                <ImageView
+                    android:src="@mipmap/back_w"
+                    android:layout_width="12dp"
+                    android:layout_height="21dp"
+                    android:layout_centerVertical="true"  />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/device_manager"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+            <RelativeLayout
+                android:id="@+id/btn_right"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp">
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="10dp"
+        android:text="未连接"
+        android:textColor="@color/black666"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt2"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="345dp"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@color/white" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"></ListView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
